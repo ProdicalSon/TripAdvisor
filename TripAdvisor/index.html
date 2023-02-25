@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <title>Trip Advisor</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+  <body>
+    <div class="head">
+      <img src="LOGO.png" alt="">
+    <h1><i>Trip</i><b>Advisor</b></h1>
+    <div class="signin">
+      <button type="#" id="signup">Sign in</button>
+    </div>
+    <div class="popup">
+      <div class="close">&times</div>
+      <div class="form">
+        <h2>Log in with:</h2>
+        <div class="foam-elements">
+          <button onclick=" logInWithGoogle() " >Google Account</button>
+        </div>
+        <div class="foam-elements">
+          <button onclick="  logInWithFacebook()">Facebook</button>
+        </div>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">Reviews</a>
+        <a href="#">Google Map</a>
+        <a href="#">About</a>
+      </nav>
+    </header>
+  </div>
+    <main>
+      <section class="hero">
+        <h2><span>Find <span class="colorspan">your  </span>next <span class="colorspan">adventure  </span> </span></h2>
+        <form>
+          <input type="text" placeholder="Search for a destination" id="input" onkeyup="myFun()">
+          <button type="submit">Search</button>
+          <div class="show" id="show">
+            <ul>
+              <li class="names"><a href="#" >Paris, France</a></li>
+              <li class="names"><a href="#" >New York City, USA</a></li>
+              <li class="names"><a href="#" >Sydney, Australia</a></li>
+              <li class="names"><a href="#" >Tokyo, Japan</a></li>
+              <li class="names"><a href="#" >nairobi, kenya</a></li>
+              <li class="names"><a href="#" >mexico City, mexico</a></li>
+              <li class="names"><a href="#" >cairo, egypt</a></li>
+              <li class="names"><a href="#" >kampala, uganda</a></li>
+              <li class="names"><a href="#" >paris, France</a></li>
+              <li class="names"><a href="#" >washinton dc, USA</a></li>
+              <li class="names"><a href="#" >welbieng, Australia</a></li>
+              <li class="names"><a href="#" >Tokyo, Japan</a></li>
+              <li class="names"><a href="#" >Paris, France</a></li>
+              <li class="names"><a href="#" >New York City, USA</a></li>
+              <li class="names"><a href="#" >Sydney, Australia</a></li>
+              <li class="names"><a href="#" >Tokyo, Japan</a></li>
+    
+    
+            </ul>
+          </div>
+        </form>
+      </section>
+      <section class="popular-destinations">
+        <h2><span>Popular Destinations</span></h2>
+        <ul>
+          <li><a href="#">Paris, France</a></li>
+          <li><a href="#">New York City, USA</a></li>
+          <li><a href="#">Sydney, Australia</a></li>
+          <li><a href="#">Tokyo, Japan</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 TripAdvisor. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+    
+  </body>
+</html>
